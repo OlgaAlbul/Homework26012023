@@ -4,31 +4,14 @@ int numberB = new Random().Next(1,100);
 Console.WriteLine(numberB);
 int numberC = new Random().Next(1,100);
 Console.WriteLine(numberC);
-if (numberA > numberB)
+int max = numberA;
+if (numberB > max)
 {
-    if (numberA > numberC)
-    {
-        Console.Write("Наибольшее число ");
-        Console.WriteLine(numberA);
-    }
-    else if (numberC > numberB)
-    {
-        Console.Write("Наибольшее число ");
-        Console.WriteLine(numberC);
-    }
-    else 
-    {
-        Console.Write("Наибольшее число ");
-        Console.WriteLine(numberB);
-    }
+    max = numberB;
 }
-else if (numberB > numberC)
+else if(numberC > max)
 {
-    Console.Write("Наибольшее число ");
-    Console.WriteLine(numberB);
+    max = numberC;
 }
-else
-{
-    Console.Write("Наибольшее число ");
-    Console.WriteLine(numberC);
-}
+Console.Write("Наибольшее число ");
+Console.WriteLine(max);
