@@ -3,7 +3,7 @@ Console.WriteLine(numberA);
 int numberD = 0;
 int numberU = 0;
 numberD = numberA/10;
-numberU = numberA-numberD*10;
+numberU = numberA%10;
 if (numberD>numberU)
 {
     Console.Write("Наибольшая цифра числа ");
