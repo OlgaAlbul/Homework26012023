@@ -1,6 +1,4 @@
-﻿Console.WriteLine("Введите число A");
+﻿Console.WriteLine("Введите трехзначное число");
 int numberA = int.Parse(Console.ReadLine());
-int numberB = 0;
-numberB = numberA/10;
-numberA = numberA-numberB*10;
-Console.WriteLine(numberA);
+Console.WriteLine(numberA%10);
+ 
